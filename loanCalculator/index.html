@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+      #loading, #result {
+        display: none;
+      }
+    </style>
 </head>
 <body class="bg-dark">
   <div class="container">
@@ -34,7 +39,7 @@
             <div class="form-group"><input type="submit" value="Calculate" class="btn btn-dark btn-block"></div>
           </form>
           <!-- Loader -->
-          <!-- <div id="loading"><img src="img/110.gif"></div> -->
+          <div id="loading"><img src="img/110.gif"></div>
           <!-- Result -->
           <div id="result" class="pt-5">
             <h5>Result</h5>
