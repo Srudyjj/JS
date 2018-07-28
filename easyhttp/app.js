@@ -1,7 +1,7 @@
 //https://jsonplaceholder.typicode.com/posts
 //Get posts
 const http = new EasyHTTP();
-http.get('https://jsonplaceholder.typicode.com/posts/', function(err, posts) {
+http.get('https://jsonplaceholder.typicode.com/posts/',(err, posts) => {
 	if(err) {
 		console.log(err)
 	} else {
