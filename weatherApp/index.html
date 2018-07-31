@@ -8,10 +8,10 @@
   <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <script src="storage.js"></script>
-  <script src="weather.js"></script>
-  <script src="ui.js"></script>
-  <script src="app.js"></script>
+  <script defer src="storage.js"></script>
+  <script defer src="weather.js"></script>
+  <script defer src="ui.js"></script>
+  <script defer src="app.js"></script>
 
   <title>WeatherApp</title>
 </head>
@@ -19,15 +19,18 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6 mx-auto text-center bg-primary mt-5 p-5 rounded">
-        <h1 class="w-location"></h1>
-        <h3 class="text-dark" id="w-desc"></h3>
-        <h3 id="w-string"></h3>
+        <span id="w-time" class="badge badge-pill badge-success">Time</span>
+        <h1 id="w-location">location</h1>
+        <small><span id="w-lon">lon</span> | <span id="w-lat">lat</span></small>
+        <h3 id="w-desc">description</h3>
+        <h3 id="w-string">temperature</h3>
         <img src="" alt="" id="w-icon">
         <ul id="w-details" class="list-group mt-3 mb-5">
-          <li class="list-group-item" id="w-humidity"></li>
-          <li class="list-group-item" id="w-dewpoint"></li>
-          <li class="list-group-item" id="w-feels-like"></li>
-          <li class="list-group-item" id="w-wind"></li>
+          <li class="list-group-item" id="w-humidity">humidity</li>
+          <li class="list-group-item" id="w-pressure">pressure</li>
+          <li class="list-group-item" id="w-wind">wind</li>
+          <li class="list-group-item" id="w-sunrise">sunrise</li>
+          <li class="list-group-item" id="w-sunset">sunset</li>  
         </ul>
         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#locModal">
           Change Location
